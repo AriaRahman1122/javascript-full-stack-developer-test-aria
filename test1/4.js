@@ -2,11 +2,11 @@
 
 // Kamus
     const arr = [-6, 4, -5, 8, -10, 0, 8];
-    var hasil;
-    var y;
-    var h = [];
-    const arhas = [];
-    const sub = [];
+    var hasil;          // penyimpanan temporary untuk menghitung perkalian
+    var y;              // untuk meyimpan lokasi array hasil perkalian terbesar
+    var h = [];         // array untuk menyimpan kumpulan sub array
+    const arhas = [];   // array untuk menyimpan dan mengelola data hasil perkalian terbesar
+    const sub = [];     // array untuk menyimpan sub array yang memiliki hasil terbesar
 
 // Algoritma
     // Cetak Data Array
@@ -29,6 +29,7 @@
         console.log("\n")
         for (let i = 0; i < arhas.length; i++) {
             console.log(arhas[i]);
+            // duplikasi penyimpan sub array
             h[i] = arhas[i];
         }
 
@@ -47,16 +48,16 @@
     // Pencarian letak sub array terbesar
         for (let i = 1; i <= h.length; i++) {
             if(h[i] ==  arhas[arr.length - 4]) {
-                y = i;
+                y = i;      // menyimpan lokasi sub array terbesar
             }
         }
     
         // Baca lagi array menggunakan posisi yang sudah diketahui untuk disimpan
             for (let i = 0; i < arr.length; i++) {
                 if (i <= y) {
-                    let p = 0;
+                    let p = 0;          // variable bantuan untuk perulangan
                     for (let j = i; j <= (i + 3); j++) {
-                      sub[p] = arr[j];
+                      sub[p] = arr[j];      // meyimpan sub array terbesar
                       p++;
                     }
                 }
