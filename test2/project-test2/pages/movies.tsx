@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Card, Row, Col } from 'antd';
+import styles from '../styles/Home.module.css'
 
 
 function MovieList() {
@@ -16,19 +18,27 @@ function MovieList() {
   }, []);
 
   return (
-    <ul>
-      {movies.map(movie => (
-          <li key={movie.id}>
-          <img src={movie.image} alt="" />
-          {movie.title}
-          {movie.rate}
-          {movie.description}
-        </li>
-
+    <div className="site-card-wrapper" id={styles.homeMovies}>
+    <Row gutter={10}>
+    {movies.map(movie => (
+        <Col span={5}>
+        <Card
+        hoverable
+        style={{ width: 240}}
+        cover={<img alt="example" src={movie.image}/>}
+        >
+          <h3>{movie.title}</h3>
+          <p>{movie.rate}</p>
+          <p>{movie.description}</p>
+      </Card>
+      <br />
+      </Col>
         
         
-      ))}
-    </ul>
+        )
+        )}
+    </Row>
+  </div>
   );
 }
 
