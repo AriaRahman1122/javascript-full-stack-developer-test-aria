@@ -10,16 +10,6 @@ This test is intended for prospective Javascript Developers focusing on Full Sta
 - Follow the rules and answer the Tests below
 - Email your result (forked repository URL) to **[web.jobs@lussa.net](mailto:web.jobs@lussa.net)** and **[jidni@lussa.net](mailto:jidni@lussa.net)** with following email subject `JSFS - [Full Name] - [WA Contact]`. Example : `JSFS - Lussa Alien - 0811 234 5678`
 
-## How To Execute The Program in folder test1
-
-- if use vs code, you can open the folder where you saved the program file
-- Open Integrated Terminal
-- On Terminal you can type : node (file_name).js
-- enter
-
-- if not use vs code like notepad, you must install node js, and then open node terminal
-- On Node Terminal you can type : node (file_name).js
-- enter
 
 ## Test 1
 
