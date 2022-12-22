@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  width: 100%;
+
+  .homeContainer {
+    flex: 6;
+    background-color: rgb(47, 51, 97);
+
+    .widgets {
+      display: flex;
+      padding: 0px 20px 20px 20px;
+      gap: 20px;
+    }
+
+    .judul {
+      font-size: 20px;
+      color: white;
+      font-weight: 100px;
+      padding: 0px 10px 0px 10px;
+      font: bold;
+      border: 2px solid white;
+      margin-left: 23px;
+      margin-top: 23px;
+      width: 130px;
+      position: relative;
+      border-radius: 20px;
+      
+      
+    }
+  }
+}
